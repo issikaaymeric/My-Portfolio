@@ -4,9 +4,9 @@ function About() {
   return (
     <section id="about" className="container">
       <h2>About Me</h2>
+      <h3 style={{fontFamily: "Times New Roman, serif"}}> Issika Aymeric Theophile Cokanh Kouamé</h3>
       <p>
-        Issika Aymeric Theophile Cokanh Kouamé
-        I'm Aymeric Issika, a computer science student specializing in AI, Machine Learning, and Deep Learning.  
+        I'm Aymeric Issika, a computer science student specializing in AI, Machine Learning, and Deep Learning.
         I am passionate about leveraging technology to solve real-world problems and connecting with entrepreneurs and finance professionals.
       </p>
       <p>
