@@ -3,7 +3,7 @@ import { FileText } from "lucide-react";
 import "../index.css"; 
 
 const config = {
-  resumeFile: "public/Resume.docx", 
+  resumeFile: "https://docs.google.com/document/d/18shjFWBk23Khke32lWi4tDlc_m8DCtXp/export?format=pdf",
 };
 
 const ResumeDownload = () => (
