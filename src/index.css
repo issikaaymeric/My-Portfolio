@@ -1,4 +1,6 @@
-/* Global Styles */
+/* =========================================================
+   GLOBAL
+========================================================= */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,169 +8,69 @@
 }
 
 body {
+  background-color: #f8f8f8;
+  color: #242424;
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  color: #242424;
-  background-color: #f8f8f8;
 }
 
 a {
+  color: #1F1F1D;
   text-decoration: none;
-  color: #1F1F1D; /* #4f46e5 */
   transition: color 0.3s;
 }
-/* a:hover {
-  color: #3730a3;
-} */
 
-/* Containers */
+/* =========================================================
+   LAYOUT / CONTAINERS
+========================================================= */
 .container {
-  width: 90%;
-  max-width: 1200px;
   margin: auto;
+  max-width: 1200px;
   padding: 2rem 0;
+  width: 90%;
 }
 
-/* Hero */
-.hero {
-  text-align: center;
-  padding: 5rem 1rem;
-}
-.hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
-}
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-.hero img {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-/* Buttons */
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color:#1F1F1D; /* #4f46e5*/
-  color: white;
-  border-radius: 12px;
-  font-weight: 500;
-  transition: background-color 0.3s;
-}
-.btn:hover {
-  background-color: #333331;
-}
-
-/* Sections */
 section {
   padding: 4rem 0;
 }
 
-/* Projects */
-.project-card {
-  background: white;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
-.project-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-.project-card p {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-}
-.project-card a {
-  font-weight: bold;
-}
-
-/* Skills */
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.skill {
-  background-color: white;
-  padding: 1rem 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-/* Contact Form */
-form input, form textarea {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-form button {
-  width: 120px;
-}
-
-/* Download resume */
-.resume-section {
-  padding: 4rem 1rem;
+/* =========================================================
+   HERO
+========================================================= */
+.hero {
+  padding: 5rem 1rem;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.resume-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+.hero img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  width: 150px;
 }
 
-.resume-section p {
-  color: #aaa;
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 
-.resume-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  background: #f8f8f8;
-  padding: 2rem;
-  border-radius: 12px;
-}
-
-.resume-info {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  text-align: left;
-  max-width: 600px;
-}
-
-.resume-icon {
-  width: 48px;
-  height: 48px;
-  color: #f8f8f8;
-}
-
-.resume-buttons {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
+/* =========================================================
+   BUTTONS
+========================================================= */
 .btn {
-  display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.6rem 1.2rem;
   background: #1a1a1a;
+  border-radius: 12px;
   color: white;
-  border-radius: 8px;
-  text-decoration: none;
+  display: inline-flex;
   font-weight: 500;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
   transition: background 0.3s;
 }
 
@@ -188,37 +90,216 @@ form button {
 }
 
 .icon-small {
-  width: 16px;
   height: 16px;
+  width: 16px;
 }
 
+/* =========================================================
+   PROJECT CARDS
+========================================================= */
+.project-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
 
-/* Footer */
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card a {
+  font-weight: bold;
+}
+
+/* =========================================================
+   SKILLS
+========================================================= */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  padding: 1rem 1.5rem;
+}
+
+/* =========================================================
+   PROGRESS BARS
+========================================================= */
+.programming-languages {
+  list-style: none;
+  margin: auto;
+  padding: 20px;
+  width: 450px;
+  margin-left: 100px;
+}
+
+.language-item {
+  margin-bottom: 30px;
+}
+
+.language-header {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.language-logo {
+  height: 30px;
+  width: 30px;
+}
+
+.language-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Bars */
+.bar {
+  background: #ddd;
+  border-radius: 10px;
+  height: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Fill animation */
+.fill {
+  animation: fill-animation 2s ease forwards;
+  border-radius: 10px;
+  height: 100%;
+  width: 0%;
+}
+
+/* Colors */
+.green {
+  background: linear-gradient(90deg, #43a047, #2e7d32);
+}
+
+.yellow {
+  background: linear-gradient(90deg, #fbc02d, #f9a825);
+}
+
+.red {
+  background: linear-gradient(90deg, #e53935, #c62828);
+}
+
+/* Target widths */
+#fill_python      { --target-width: 90%; animation-delay: .1s; }
+#fill_javascript  { --target-width: 80%; animation-delay: .2s; }
+#fill_csharp      { --target-width: 75%; animation-delay: .3s; }
+#fill_cpp         { --target-width: 60%; animation-delay: .4s; }
+#fill_html_css    { --target-width: 95%; animation-delay: .5s; }
+#fill_php         { --target-width: 50%; animation-delay: .6s; }
+#fill_myspl       { --target-width: 40%; animation-delay: .7s; }
+
+/* Animation */
+@keyframes fill-animation {
+  to {
+    width: var(--target-width);
+  }
+}
+
+/* =========================================================
+   CONTACT FORM
+========================================================= */
+form input,
+form textarea {
+  font-family: 'Times New Roman', Times, serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+form button {
+  width: 120px;
+}
+
+/* =========================================================
+   RESUME SECTION
+========================================================= */
+.resume-section {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.resume-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.resume-section p {
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+.resume-card {
+  align-items: center;
+  background: #f8f8f8;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.resume-info {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  max-width: 600px;
+  text-align: left;
+}
+
+.resume-icon {
+  color: #f8f8f8;
+  height: 48px;
+  width: 48px;
+}
+
+.resume-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
 footer {
   background-color: #1f1f1f;
   color: #fff;
+  margin-top: 4rem;
   padding: 2rem 1rem;
   text-align: center;
-  margin-top: 4rem;
 }
+
 footer a {
   color: #f8f8f8;
-  text-decoration: none;
   margin: 0 0.5rem;
-  transition: color 0.3s;
-}
-/* footer a:hover {
-  color: #3730a3;
-} */
-/* Footer Link Styles */
-footer a {
-  color: #f8f8f8;
   text-decoration: none;
-  margin: 0 0.5rem;
   transition: color 0.3s;
 }
 
-/* Responsive */
+/* =========================================================
+   RESPONSIVE
+========================================================= */
 @media (max-width: 768px) {
   .skills-grid {
     flex-direction: column;

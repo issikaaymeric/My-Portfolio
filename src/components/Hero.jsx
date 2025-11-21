@@ -9,8 +9,8 @@ function Hero() {
         alt="Aymeric Issika" 
         style={{borderRadius: "50%", width: "150px", marginBottom: "1rem" }}
       />
-      <h1>AI / ML | Cybersecurity | Tech & Finance</h1>
-      <p>Hi! I'm Aymeric, a computer science student passionate about AI, machine learning, and deep learning. Let's innovate together in tech & finance!</p>
+      <h1>AI / ML | Technology</h1>
+      <p>Hi! I'm Aymeric, a computer science student passionate about AI, machine learning, and deep learning. Let's innovate together in technology!</p>
       <a href="#connect" className="btn" style={{fontFamily: "'Arial', 'Helvetica', sans-serif"}}>Connect with me</a>
     </section>
   );

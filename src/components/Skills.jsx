@@ -2,7 +2,7 @@ import React from 'react';
 
 const skills = [
   "Python", "Machine Learning", "Deep Learning", "TensorFlow", "PyTorch",
-  "JavaScript", "React","React Native", "Dart", "Flutter", "Node.js","C++",
+  "JavaScript", "jQuery","React","React Native", "Dart", "Flutter", "Node.js","C#", "PHP", "C++",
   "Arduino", "Problem Solving","Collaboration"
 ];
 
