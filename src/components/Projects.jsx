@@ -35,6 +35,14 @@ const projects = [
     demo: "https://issikaaymeric.github.io/Apprendre-les-Bases-de-JavaScript/index.html",
   },
   {
+    image: "/python-tutorial-screenshot.png",
+    title: "Python Tutorial Website",
+    description: "Tutorial website for learning Python.",
+    tech: ["Python", "HTML", "CSS"],
+    github: "https://github.com/issikaaymeric/Python-Tutorial",
+    demo: "https://issikaaymeric.github.io/Python-Tutorial/",
+  },
+  {
     video: "/arduino-project-video.mp4",
     title: "Arduino Rover",
     description: "A remote-controlled rover built with Arduino and C++.",
